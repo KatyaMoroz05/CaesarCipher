@@ -16,5 +16,11 @@ public class Main
 
         System.out.printf("Зашифрованная строка: %s\n", encStr);
         System.out.printf("Расшифрованная строка: %s\n", decStr);
+
+        String encFile = caesarCipher.encryptFile("encryptFile.txt");
+        String decFile = caesarCipher.decryptFile("decryptFile.txt");
+
+        System.out.printf("Зашифрованный файл: %s\n", encFile);
+        System.out.printf("Расшифрованный файл: %s\n", decFile);
     }
 }
